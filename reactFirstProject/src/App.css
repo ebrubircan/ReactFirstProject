@@ -1,0 +1,11 @@
+.image.is-4by3 img{
+    height: 200px;
+}
+
+.image.is-4by3 {
+    padding: 100px;
+}
+
+.title.is-4 {
+    font-size: 30px;
+}
