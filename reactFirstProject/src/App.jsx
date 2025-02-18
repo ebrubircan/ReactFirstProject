@@ -1,34 +1,30 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import Course from './Course'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className='App'>
+        <Course 
+          title='Angular'
+          description='Angular is a platform and framework for building single-page client applications using HTML and TypeScript.'
+       />
+        <Course 
+          title='Bootstrap'
+          description='Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.'  
+        />
+        <Course 
+          title='Vue'
+          description='Vue.js is an open-source model–view–viewmodel front end JavaScript framework for building user interfaces and single-page applications.'
+        />
+        <Course
+          title='React'
+          description='React is an open-source, front end, JavaScript library for building user interfaces or UI components.'
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
